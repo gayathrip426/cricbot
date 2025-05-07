@@ -40,10 +40,11 @@ Make sure you have the following installed:
                   └── model-best/
                       └── config.json
       ```
-2. **Build and run frontend**
+3. **Build and run frontend**
    ```bash
    npm install
    npm run dev
-3. **Build and run backend**
+4. **In another terminal Build and run backend**
    ```bash
    uvicorn controller:app --reload
+5. **Go to the url set by the variable [origins](https://github.com/gayathrip426/cricbot/blob/main/chatbot_backend/controller.py#L22) in [controller.py](https://github.com/gayathrip426/cricbot/blob/main/chatbot_backend/controller.py)**
