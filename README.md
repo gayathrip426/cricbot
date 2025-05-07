@@ -24,6 +24,22 @@ Make sure you have the following installed:
    ```bash
    git clone https://github.com/gayathrip426/cricbot.git
    cd cricbot
+2. **Download pretrained models and cricket database**
+   - Pretrained, finetuned models are available [here](https://drive.google.com/drive/folders/161_Tc9hq45wVkzgcFmCsQJdA7gA7Va5n?usp=sharing)
+   - Cricket database built from [Cricsheet](https://cricsheet.org/downloads/), reference script to parse the JSON files [here](https://drive.google.com/file/d/1yJKPoiuarmCd9sy7BVMkZKTcyduZ8XfU/view?usp=sharing)
+   - Prebuilt database [here](https://drive.google.com/file/d/1uvPzsCimeqRzB8VMgZqkOprXggF-IOWr/view?usp=sharing)
+   - Scripts and Datasets used to train NER and Intent recognition pipeline [here](https://drive.google.com/drive/folders/1cHM1R2woh-kgiY--x_4oJdj65iismOe5?usp=sharing)
+   - After setting up the models and the database, make sure the directory structure look like this:
+   ```text
+      project-root/
+      └── chatbot_backend/
+          ├── cricket_stats.db
+          └── fine_tuned_models/
+              ├── cricket_ner_model/
+              └── fine_tuned_intent_model/
+                  └── model-best/
+                      └── config.json
+      ```
 2. **Build and run frontend**
    ```bash
    npm install
